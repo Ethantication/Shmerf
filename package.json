@@ -1,0 +1,16 @@
+{
+  "name": "conflictpulse",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter @conflictpulse/web dev",
+    "build": "pnpm --filter @conflictpulse/web build",
+    "lint": "pnpm --filter @conflictpulse/web lint",
+    "worker": "pnpm --filter @conflictpulse/worker start",
+    "test": "pnpm -r test"
+  }
+}
